@@ -1,0 +1,111 @@
+/**
+ * /*UTILITIES
+ *
+ * @format
+ */
+@import url("https://fonts.googleapis.com/css2?family=Open Sans:wght@100;200;300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&display=swap");
+
+:root {
+   /*primary colors*/
+   --primary-color: #b87333;
+   --bg-primary: url("../images/bg-pattern-1.png");
+
+   /*secondary-colors*/
+   --blend-color: linear-gradient(#b87333, rgba(0, 0, 0, 0.5));
+   --dark: #111;
+   --text-color: #fff;
+}
+
+.container {
+   width: 1400px;
+   max-width: 100%;
+   margin: 0 auto;
+   padding: 40px;
+}
+
+.highlight {
+   color: var(--primary-color);
+}
+.blink {
+   position: relative;
+   top: 2px;
+   display: inline-block;
+   width: 10px;
+   height: 20px;
+   border-right: 0.2rem solid #eee;
+   animation: hide 0.3s infinite alternate;
+}
+
+.btn {
+   width: 300px;
+   display: inline-block;
+   background: var(--blend-color);
+   border: 1px solid var(--text-color);
+   color: var(--text-color);
+   margin: 1.5rem auto 0.5rem;
+   padding: 1.2rem;
+   text-align: center;
+   text-transform: uppercase;
+}
+
+.btn:hover {
+   background: var(--text-color);
+   border: 1px solid var(--text-color);
+   color: var(--primary-color);
+   transition: 0.5s ease;
+}
+
+.iconTxt {
+   color: #fff;
+}
+
+/*The rotate is applied using javascript
+to rotate the toggle bars on mobile screen*/
+.rotate {
+   transform: rotate(360deg);
+}
+
+.main {
+   display: none;
+   opacity: 0;
+   transition: opacity 0.5s ease-in;
+}
+
+/* SHOWCASE ANIME */
+
+@keyframes zoom-in {
+   from {
+      transform: scale(0.5);
+   }
+
+   to {
+      transform: scale(1);
+   }
+}
+/* PAAGE LOADER ANIME */
+@keyframes bounce {
+   to {
+      width: 20px;
+      height: 20px;
+      transform: rotateY(360deg);
+   }
+}
+/*PROJECT IMG ANIMAE */
+@keyframes translate {
+   0% {
+      transform: translateY(-25px);
+   }
+   100% {
+      transform: translateY(2px);
+   }
+}
+/* ICON ANIME */
+@keyframes translate2 {
+   0% {
+      transform: translateY(10px);
+   }
+   100% {
+      transform: translateY(0);
+   }
+}

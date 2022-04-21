@@ -1,0 +1,241 @@
+/** @format */
+
+@media (max-width: 968px) {
+   .project .container {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+@media (max-width: 768px) {
+   html {
+      overflow-x: hidden;
+   }
+
+   body {
+      font-size: 1.1rem;
+   }
+
+   .container {
+      padding: 40px 25px;
+   }
+
+   .main__header,
+   .main__header .container {
+      padding: 0;
+   }
+
+   .main__header .social__bar {
+      display: flex;
+      flex-flow: column;
+      position: fixed;
+      top: 30%;
+      left: 15px;
+      z-index: 99;
+   }
+
+   .main__header .social__bar .social {
+      margin: 10px 0;
+   }
+
+   .logo {
+      padding: 0 1rem;
+      position: relative;
+      z-index: 99;
+   }
+
+   .toggle__cont {
+      background: var(--primary-color);
+      position: relative;
+      z-index: 99;
+      padding: 0.5rem;
+      display: flex;
+      align-items: center;
+      height: 80px;
+      cursor: pointer;
+      transition: all 0.5s ease;
+   }
+
+   .toggle {
+      position: relative;
+      z-index: 99;
+      padding: 0.5rem;
+      cursor: pointer;
+      transition: all 0.5s ease;
+   }
+
+   .toggle .bar {
+      display: block;
+      width: 35px;
+      height: 2px;
+      margin: 6px auto;
+      background: #fff;
+      transition: all 0.5s ease;
+   }
+
+   .toggle.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(-45deg);
+      transition: all 0.5s ease;
+   }
+   .toggle.active .bar:nth-child(2) {
+      opacity: 0;
+   }
+   .toggle.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(45deg);
+      background: var(--text-color);
+      transition: all 0.5s ease;
+   }
+
+   .navigation {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      top: 0;
+      left: -1000px;
+      z-index: -5;
+      opacity: 0;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.5s ease;
+   }
+
+   .navigation.active {
+      position: fixed;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 5;
+      opacity: 1;
+      background: rgba(0, 0, 0, 0.8);
+   }
+
+   .navbar {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+   }
+
+   .navbar .navbar__items:hover {
+      background: var(--primary-color);
+      border: 0;
+      transition: all 0.5s ease;
+   }
+
+   .hero {
+      background: url("../images/bg-mobile.jpg") no-repeat center center/cover;
+      padding: 0;
+      height: auto;
+   }
+
+   .hero .container {
+      background: rgba(30, 31, 33, 0.1);
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 5rem;
+   }
+
+   .hero__content {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      padding: 1rem 0;
+      height: 500px;
+   }
+
+   .about__img {
+      max-width: 600px;
+      margin: auto;
+      order: 2;
+   }
+
+   .hero__content {
+      width: 100%;
+      text-align: center;
+   }
+
+   .hero__content h2 {
+      font-size: 2.5rem;
+   }
+
+   .btn {
+      width: 100%;
+      max-width: 300px;
+   }
+
+   .about .container,
+   .skill__content,
+   .exp .container {
+      grid-template-columns: 1fr;
+   }
+
+   .grow {
+      color: #111;
+   }
+
+   .rs {
+      text-align: left;
+      padding: 2rem;
+   }
+
+   .project .container {
+      grid-template-columns: 1fr;
+   }
+
+   .project__items {
+      width: 100%;
+   }
+
+   .project img {
+      animation: translate 0s;
+      height: 100%;
+   }
+
+   .form {
+      padding: 0;
+   }
+
+   .foot_container,
+   .form_control {
+      flex-flow: column;
+   }
+
+   .footer p {
+      order: 3;
+   }
+
+   .foot__logo {
+      text-align: center;
+      margin-top: 2rem;
+   }
+
+   .social {
+      width: 25px;
+      height: 25px;
+      padding: 1.5rem;
+   }
+
+   .fa-facebook,
+   .fa-linkedin,
+   .fa-instagram,
+   .fa-twitter {
+      transform: scale(0.5);
+   }
+}
+
+/* MOBILE MENU ANIME */
+@keyframes circle {
+   from {
+      opacity: 0.5;
+      border-radius: 50%;
+      transform: scale(0.1);
+   }
+
+   to {
+      opacity: 1;
+      border-radius: 50%;
+      transform: scale(1);
+   }
+}
