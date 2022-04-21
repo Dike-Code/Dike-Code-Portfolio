@@ -27,7 +27,7 @@
    .main__header .social__bar {
       display: flex;
       flex-flow: column;
-      position: fixed;
+      position: absolute;
       top: 30%;
       left: 15px;
       z-index: 99;
