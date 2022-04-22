@@ -40,7 +40,7 @@
 .btn {
    width: 300px;
    display: inline-block;
-   background: var(--blend-color);
+   background: var(--text-color);
    border: 0;
    color: var(--text-color);
    margin: 1.5rem auto 0.5rem;
@@ -50,7 +50,7 @@
 }
 
 .btn:hover {
-   background: var(--text-color);
+   transform: scale(0.98);
    color: var(--primary-color);
    transition: 0.5s ease;
 }
