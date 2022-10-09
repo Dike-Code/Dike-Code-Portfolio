@@ -3,30 +3,32 @@
  *
  * @format
  */
-@import url("https://fonts.googleapis.com/css2?family=Open Sans:wght@100;200;300;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Ephesis&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open Sans:wght@100;200;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
 
 :root {
-   /*primary colors*/
-   --primary-color: #b87333;
-   --bg-primary: url("../images/bg-pattern-1.png");
+   /* primary colors*/
+   --primary-color:#01061a; /*#b87333;*/
+   --bg-primary: url("../images/bg-pattern-1.png"); 
 
-   /*secondary-colors*/
-   --blend-color: linear-gradient(#b87333, rgba(0, 0, 0, 0.5));
-   --dark: #111;
-   --text-color: #fff;
+   /* secondary-colors */
+   --secondary-color:#a52a2a;
 }
 
 .container {
-   width: 1400px;
+   width: 1200px;
    max-width: 100%;
    margin: 0 auto;
    padding: 40px;
 }
 
 .highlight {
-   color: var(--primary-color);
+   color:#fff;
 }
+.highlight2{
+   color:var(--secondary-color);
+}
+
 .blink {
    position: relative;
    top: 2px;
@@ -40,17 +42,16 @@
 .btn {
    width: 300px;
    display: inline-block;
-   background: var(--text-color);
-   border: 0;
-   color: var(--primary-color);
-   margin: 1.5rem auto 0.5rem;
+   background:var(--secondary-color);
+   color:#fff;
    padding: 1.2rem;
    text-align: center;
    text-transform: uppercase;
 }
 
 .btn:hover {
-   transform: scale(0.98);
+   background:#efefef;
+   color: var(--secondary-color);
    transition: 0.5s ease;
 }
 
@@ -84,8 +85,8 @@ to rotate the toggle bars on mobile screen*/
 /* PAAGE LOADER ANIME */
 @keyframes bounce {
    to {
-      width: 20px;
-      height: 20px;
+      width: 10px;
+      height: 10px;
       transform: rotateY(360deg);
    }
 }
