@@ -7,104 +7,105 @@
 @import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
 
 :root {
-   /* primary colors*/
-   --primary-color:#01061a; /*#b87333;*/
-   --bg-primary: url("../images/bg-pattern-1.png"); 
+  /* primary colors*/
+  --primary-color: #01061a;
+  /*#b87333;*/
+  --bg-primary: url("../images/bg-pattern-1.png");
 
-   /* secondary-colors */
-   --secondary-color:#a52a2a;
+  /* secondary-colors */
+  --secondary-color: #a52a2a;
 }
 
 .container {
-   width: 1200px;
-   max-width: 100%;
-   margin: 0 auto;
-   padding: 40px;
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 40px;
 }
 
 .highlight {
-   color:#fff;
+  color: #fff;
 }
-.highlight2{
-   color:var(--secondary-color);
+.highlight2 {
+  color: var(--secondary-color);
 }
 
 .blink {
-   position: relative;
-   top: 2px;
-   display: inline-block;
-   width: 10px;
-   height: 20px;
-   border-right: 0.2rem solid #eee;
-   animation: hide 0.3s infinite alternate;
+  position: relative;
+  top: 2px;
+  display: inline-block;
+  width: 10px;
+  height: 20px;
+  border-right: 0.2rem solid #eee;
+  animation: hide 0.3s infinite alternate;
 }
 
 .btn {
-   width: 300px;
-   display: inline-block;
-   background:var(--secondary-color);
-   color:#fff;
-   padding: 1.2rem;
-   text-align: center;
-   text-transform: uppercase;
+  width: 300px;
+  display: inline-block;
+  background:#fff;
+  color:var(--secondary-color);
+  padding: 1.2rem;
+  text-align: center;
+  text-transform: capitalize;
 }
 
 .btn:hover {
-   background:#efefef;
-   color: var(--secondary-color);
-   transition: 0.5s ease;
+  background: #efefef;
+  color: var(--secondary-color);
+  transition: 0.5s ease;
 }
 
 .iconTxt {
-   color: #fff;
+  color: #fff;
 }
 
 /*The rotate is applied using javascript
 to rotate the toggle bars on mobile screen*/
 .rotate {
-   transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 .main {
-   display: none;
-   opacity: 0;
-   transition: opacity 0.5s ease-in;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
 }
 
 /* SHOWCASE ANIME */
 
 @keyframes zoom-in {
-   from {
-      transform: scale(0.5);
-   }
+  from {
+    transform: scale(0.5);
+  }
 
-   to {
-      transform: scale(1);
-   }
+  to {
+    transform: scale(1);
+  }
 }
 /* PAAGE LOADER ANIME */
 @keyframes bounce {
-   to {
-      width: 10px;
-      height: 10px;
-      transform: rotateY(360deg);
-   }
+  to {
+    width: 10px;
+    height: 10px;
+    transform: rotateY(360deg);
+  }
 }
 /*PROJECT IMG ANIMAE */
 @keyframes translate {
-   0% {
-      transform: translateY(-25px);
-   }
-   100% {
-      transform: translateY(2px);
-   }
+  0% {
+    transform: translateY(-25px);
+  }
+  100% {
+    transform: translateY(2px);
+  }
 }
 /* ICON ANIME */
 @keyframes translate2 {
-   0% {
-      transform: translateY(10px);
-   }
-   100% {
-      transform: translateY(0);
-   }
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
