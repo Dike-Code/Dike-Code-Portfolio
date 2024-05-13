@@ -178,6 +178,7 @@
       padding: 0;
       margin: auto;
       align-items: center;
+      text-align:justify;
    }
 
    .grow {
